@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Colegios {
     public static void main(String[] args) {
-         Scanner leer = new Scanner(System.in);
+           Scanner leer = new Scanner(System.in);
         ArrayList <String> estudiante;
         estudiante = new ArrayList();      
        int estu;
@@ -20,22 +20,18 @@ public class Colegios {
             System.out.println("Digite la nota del estudiante "+i);
             not=leer.nextDouble();
             pro=pro+not;
-            if(not<=3){
+            if(not>=3){
               apro=apro+1;
          }        
      }                              
-        for( int u=0; u<estudiante.size(); u++){
-         System.out.println(estudiante.get(u));
-         }
-        System.out.println();
-          tot=pro/n[estu];
+         System.out.println(estudiante);   
+         tot=pro/estu;
          System.out.println("El promedio de los estudiantes es de: "+tot);
          System.out.println("El total de estudiantes con mas de 3 es de: "+apro);
     
     
-
 }
-    }
+}
 
 
  
